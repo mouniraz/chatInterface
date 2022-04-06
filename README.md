@@ -155,7 +155,7 @@ Image(painter = painterResource(id = R.drawable.profile),
             Text(text = message.author,
                 color = MaterialTheme.colors.secondaryVariant
             )
-            ```
+```
          
 
 
