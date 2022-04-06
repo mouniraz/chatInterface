@@ -138,8 +138,26 @@ Image(painter = painterResource(id = R.drawable.profile),
         Spacer(modifier = Modifier.width(8.dp))
   ```
 ## Material Design
-utiliser le theme par defaut créé au nom de l´application
-![default Theme](https://github.com/mouniraz/chatInterface/blob/main/themepng.png)
+utiliser le theme par defaut créé au nom de l´application   
+![default Theme](https://github.com/mouniraz/chatInterface/blob/main/themepng.png)   
+1) changer les couleurs
+```kotlin
+Image(painter = painterResource(id = R.drawable.profile),
+            contentDescription ="Profile image",
+        modifier=Modifier.size(40.dp)
+            .clip(shape= CircleShape)
+            .border(1.5.dp, MaterialTheme.colors.secondary, CircleShape)
+
+        )
+        Spacer(modifier = Modifier.width(8.dp))
+
+        Column(){
+            Text(text = message.author,
+                color = MaterialTheme.colors.secondaryVariant
+            )
+            ```
+            
+
 ## Listes 
 
    
