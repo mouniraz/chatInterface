@@ -128,15 +128,15 @@ fun MessageCard(message: Message) {
         }
    ```
    4) ajouter un espace horizontal 
-    ```kotlin
-     Image(painter = painterResource(id = R.drawable.profile),
+```kotlin
+Image(painter = painterResource(id = R.drawable.profile),
             contentDescription ="Profile image",
         modifier=Modifier.size(40.dp)
             .clip(shape= CircleShape),
 
             )
         Spacer(modifier = Modifier.width(8.dp))
-    ```
+  ```
     
    
 
