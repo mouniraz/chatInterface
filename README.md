@@ -33,6 +33,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
 ```
 ## Preview Android Studio  
 Pour voir le preview de votre code avant execution ajouter l'annotaion @Preview á la fonction DefaultPreview
@@ -100,5 +101,42 @@ fun MessageCard(message: Message) {
 }
 ```
 
+## Mise en forme du layouts avec le Modifier 
+1) ajout d un padding autour de chaque ligne message
+```kotlin
+fun MessageCard(message: Message) {
+    
+    Row(modifier=Modifier.padding(all=8.dp)) 
+    ........
+    ```
+ 2) Mise en fore de l´image (taille, clip)
+ ```kotlin
+ Image(painter = painterResource(id = R.drawable.profile),
+            contentDescription ="Profile image",
+        modifier=Modifier.size(40.dp)
+            .clip(shape= CircleShape),
 
+            )
+  ```
+  3) ajouter un espace vertical entre les texts
+  ```kotlin
+   Column(){
+            Text(text = message.author)
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(text = message.body)
+
+        }
+   ```
+   4) ajouter un espace horizontal 
+    ```kotlin
+     Image(painter = painterResource(id = R.drawable.profile),
+            contentDescription ="Profile image",
+        modifier=Modifier.size(40.dp)
+            .clip(shape= CircleShape),
+
+            )
+        Spacer(modifier = Modifier.width(8.dp))
+    ```
+    
+   
 
