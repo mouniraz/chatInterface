@@ -196,5 +196,5 @@ fun Conversation(messages: List<Message>) {
 }
 ```
 2) importer une listes de messages
-iporter cette liste dans un fichier kt dans le projet ![sampleData](https://gist.github.com/yrezgui/26a1060d67bf0ec2a73fa12695166436)
+iporter cette liste dans un fichier kt dans le projet [sampleData](https://gist.github.com/yrezgui/26a1060d67bf0ec2a73fa12695166436)!
 
