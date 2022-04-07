@@ -183,5 +183,18 @@ Image(painter = painterResource(id = R.drawable.profile),
             }
   ```
   
-   
+## Listes de messages
+1)definir une fonction qui affiche une listes de messages 
+```kotlin 
+@Composable
+fun Conversation(messages: List<Message>) {
+    LazyColumn {
+        items(messages) { message ->
+            MessageCard(message)
+        }
+    }
+}
+```
+2) importer une listes de messages
+iporter cette liste dans un fichier kt dans le projet ![sampleData](https://gist.github.com/yrezgui/26a1060d67bf0ec2a73fa12695166436)
 
