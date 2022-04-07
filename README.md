@@ -172,6 +172,16 @@ Image(painter = painterResource(id = R.drawable.profile),
 
             )
   ```
+  3)formes
+  ```kotlin
+  Surface(shape = MaterialTheme.shapes.medium, elevation = 1.dp) {
+                Text(
+                    text = message.body,
+                    modifier = Modifier.padding(all = 4.dp),
+                    style = MaterialTheme.typography.body2
+                )
+            }
+  ```
   
    
 
