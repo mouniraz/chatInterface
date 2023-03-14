@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
 ```
 ## Preview Android Studio  
 Pour voir le preview de votre code avant execution ajouter l'annotaion @Preview á la fonction DefaultPreview
-```kotlin
+```kotlin 
 @Preview
 @Composable
 fun DefaultPreview() {
