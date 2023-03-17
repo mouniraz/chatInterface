@@ -77,10 +77,8 @@ fun MessageCard(name: String) {
     }
 
 }
-```
 
 3) definir la classe data Message
-```kotlin
 data class Message(val author: String, val body: String)
 ```
 4) redefinir MessageCard  
@@ -108,9 +106,9 @@ fun MessageCard(message: Message) {
     
     Row(modifier=Modifier.padding(all=8.dp)) 
     ........
-    ```
+    
  2) Mise en fore de l´image (taille, clip)
- ```kotlin
+ 
  Image(painter = painterResource(id = R.drawable.profile),
             contentDescription ="Profile image",
         modifier=Modifier.size(40.dp)
